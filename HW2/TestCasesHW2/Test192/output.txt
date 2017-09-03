@@ -1,0 +1,15 @@
+M13 Raid
+..X...OO..O.OO
+..O..O.X...O..
+XOO..XXOXO..OO
+...XO.....O.O.
+...OXXXX.OOOO.
+.O....O.....OO
+.X.O.X.X..OOX.
+......OXOOOOOO
+...OO..OO..O.X
+..OO..O....OXX
+.XO.O.XX.....X
+O..OXO.O....O.
+....O..XOO.OOO
+.XO..XOXX..OOO

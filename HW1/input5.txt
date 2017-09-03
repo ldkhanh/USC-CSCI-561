@@ -1,0 +1,17 @@
+UCS
+A
+G
+6
+A B 2
+A C 3
+B D 3
+C E 2
+D G 1
+E G 1
+
+
+Output : UCS Shortest Path: 
+A 0
+B 2
+D 5
+G 6

@@ -1,0 +1,30 @@
+A*
+https://github.com/cs512/CSCI561/blob/master/cases/input98.txt
+https://raw.githubusercontent.com/cs512/CSCI561/master/cases/input164.txt
+https://raw.githubusercontent.com/cs512/CSCI561/master/cases/input161.txt
+https://raw.githubusercontent.com/cs512/CSCI561/master/cases/input156.txt
+https://raw.githubusercontent.com/cs512/CSCI561/master/cases/input141.txt
+https://raw.githubusercontent.com/cs512/CSCI561/master/cases/input139.txt
+https://raw.githubusercontent.com/cs512/CSCI561/master/cases/input31.txt
+UCS
+https://raw.githubusercontent.com/cs512/CSCI561/master/cases/input111.txt
+https://raw.githubusercontent.com/cs512/CSCI561/master/cases/input70.txt  ***
+https://raw.githubusercontent.com/cs512/CSCI561/master/cases/input62.txt
+https://raw.githubusercontent.com/cs512/CSCI561/master/cases/input18.txt
+DFS
+https://raw.githubusercontent.com/cs512/CSCI561/master/cases/input104.txt
+https://raw.githubusercontent.com/cs512/CSCI561/master/cases/input103.txt
+https://github.com/cs512/CSCI561/blob/master/cases/output101.txt
+https://raw.githubusercontent.com/cs512/CSCI561/master/cases/input98.txt (Checked by hand correct)
+https://raw.githubusercontent.com/cs512/CSCI561/master/cases/input64.txt
+https://raw.githubusercontent.com/cs512/CSCI561/master/cases/input56.txt
+https://raw.githubusercontent.com/cs512/CSCI561/master/cases/input40.txt
+https://raw.githubusercontent.com/cs512/CSCI561/master/cases/input28.txt
+https://raw.githubusercontent.com/cs512/CSCI561/master/cases/input20.txt
+https://raw.githubusercontent.com/cs512/CSCI561/master/cases/input0.txt
+BFS
+
+
+
+
+

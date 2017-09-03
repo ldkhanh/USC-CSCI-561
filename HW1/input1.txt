@@ -1,0 +1,40 @@
+UCS
+S
+G
+8
+S A 1
+S B 5
+A C 1
+C B 1
+B E 5
+E F 5
+F G 5
+C G 100
+4
+A 4
+B 1
+C 1
+D 0
+
+
+Output : UCS Shortest Path: 
+S 0
+A 1
+C 2
+B 3
+E 8
+F 13
+G 18
+
+Output: BFS:
+S 0
+A 1
+C 2
+G 3
+
+Output: DFS:
+S 0
+A 1
+C 2
+G 3
+

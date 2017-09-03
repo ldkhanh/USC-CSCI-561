@@ -1,0 +1,24 @@
+BFS
+S
+G
+8
+S A 1
+S B 5
+S C 8
+A D 3
+A E 7
+A G 9
+B G 4
+C G 5
+
+
+Output: BFS:
+S 0
+A 1
+G 2
+
+Output: UCS:
+S 0
+B 5
+G 9
+

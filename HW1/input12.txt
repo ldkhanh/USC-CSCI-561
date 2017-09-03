@@ -1,0 +1,13 @@
+UCS
+A
+F
+4
+A C 3
+A D 1
+D F 3
+C F 1
+
+Output: UCS:
+A 0
+D 1
+F 4

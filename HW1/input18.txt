@@ -1,0 +1,38 @@
+A*
+S
+G3
+14
+S B 5
+S C 1
+S A 7
+A F 10
+A E 8
+B H 4
+B G3 3
+C D 1
+D B 1
+E G1 9
+F G2 2
+G2 I 0
+H G3 4
+I G1 2
+12
+S 6
+A 10
+B 1
+C 5
+D 2
+E 8
+F 1
+G1 0
+G2 0
+G3 0
+H 15
+I 1
+
+Output: A*:
+S 0
+C 1
+D 2
+B 3
+G3 6

@@ -1,0 +1,18 @@
+1
+Friend(Ernie,Joe)
+15
+(Skis(x) => ~(Caught(x)))
+(Caught(x) => ~(Skis(x)))
+((Parent(x,y) & Caught(y)) => Skis(x))
+(Skis(x) & Friend(x,y) => Skis(y))
+(Friend(x,y) => Friend(y,x))
+Parent(Mike, Joe)
+Parent(Janet,Joe)
+Parent(Nancy,Mike)
+Parent(Ernie,Janet)
+Parent(Bert,Nancy)
+Parent(Red,Ernie)
+Friend(Red,Bert)
+Friend(Drew,Nancy)
+Caught(Mike)
+Caught(Ernie)

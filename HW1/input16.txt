@@ -1,0 +1,24 @@
+BFS
+A
+C
+3
+A B 1
+C A 2
+B C 3
+
+
+
+Output: BFS:
+A 0
+B 1
+C 2
+-------------
+
+BFS/DFS
+A
+D
+4
+A B 1
+A C 2
+A D 3
+B C 1

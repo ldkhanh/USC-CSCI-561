@@ -1,0 +1,9 @@
+1
+Kills(Curiosity,Tuna)
+6
+((Animal(y) => Loves(x,y)) => Loves(z,x))
+((Animal(z) & Kills(x,z)) => (~Loves(y,x)))
+(Animal(x) => Loves(Jack,x))
+(Kills(Jack,Tuna) | Kills(Curiosity,Tuna))
+Cat(Tuna)
+(Cat(x) => Animal(x))

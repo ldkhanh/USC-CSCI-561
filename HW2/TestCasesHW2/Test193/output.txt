@@ -1,0 +1,16 @@
+M11 Raid
+..O..O.OO...OO.
+.....X.O....X..
+O...OO..X...O..
+.X..........OO.
+X.X...O......OX
+.X.X....X....OO
+.....OO.OOOX...
+...O.O.X......O
+OO....XOO..O.X.
+O.O.OO..OX..O..
+...XO.OOOX.OOO.
+..O....X..O.OX.
+.OO..X..OOOOXO.
+...XX.....XOO..
+OO...OO.O...O.X

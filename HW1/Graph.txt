@@ -1,0 +1,179 @@
+package aiHW01;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.*;
+
+
+public class Graph {
+	private ArrayList<Node> listNodes;
+	private int[][] adjG;
+	private int numNodes;
+	private String Algo;
+	private Node startS;
+	private Node goalS;
+	
+	public Graph(){
+		this.setListNodes(new ArrayList<Node>());
+		this.setNumNodes(0);
+		this.setGoalS(null);
+		this.setGoalS(null);
+	}
+	
+	public void buildData(){
+		String numLT = null, numST = null, startState, goalState;
+		int numLiveTraffic = 0; 
+		int numSundayTraffic = 0;
+		BufferedReader br = null;
+		String[] tokens;
+		String[] tLine;
+		Map<String,Integer> nodesMap = new LinkedHashMap<String,Integer>();
+		Set<String> lNodes = new LinkedHashSet<String>();
+		
+		try {
+			br = new BufferedReader(new FileReader("input.txt"));
+			
+			this.setAlgo(br.readLine().replaceAll("\\s", ""));
+			startState = br.readLine().replaceAll("\\s", "");
+			goalState = br.readLine().replaceAll("\\s", "");
+			if ((numLT = br.readLine()) != null)
+				numLT = numLT.replaceAll("\\s", "");
+			else {
+				System.out.println("Check input File");
+				return;
+			}
+			if (numLT.matches("[0-9]+") && numLT.length()>0)
+				numLiveTraffic = Integer.parseInt(numLT);
+			System.out.println("Algorithm: " + this.getAlgo());
+			System.out.println("Start State: " + startState);
+			System.out.println("Goal State: " + goalState);
+			System.out.println("Number Live Traffic Line: " + numLiveTraffic);
+
+			tLine = new String[numLiveTraffic];
+			for (int i = 0; i < numLiveTraffic; i++) {
+				tLine[i] = br.readLine();
+				tokens = tLine[i].split(" ");
+//				System.out.println(tokens[0] + " ---> " + tokens[1] + " : " + tokens[2]);
+				lNodes.add(tokens[0].replaceAll("\\s", ""));
+				lNodes.add(tokens[1].replaceAll("\\s", ""));
+			}			
+			this.setNumNodes(lNodes.size());
+			int j=0;
+			String temp;
+			Iterator<String> it = lNodes.iterator();
+			while (it.hasNext()) {
+				temp = (String)it.next();
+				nodesMap.put(temp, j++);
+				listNodes.add(new Node(j-1,j-1,temp));
+			}
+						
+			this.setStartS(listNodes.get((int)nodesMap.get(startState)));
+			this.setGoalS(listNodes.get((int)nodesMap.get(goalState)));
+			
+			adjG = new int[this.getNumNodes()][this.getNumNodes()];
+			for (int i = 0; i < numLiveTraffic; i++) {
+				tokens = tLine[i].split(" ");
+				adjG[(int)nodesMap.get((String)tokens[0].replaceAll("\\s", ""))][(int)nodesMap.get((String)tokens[1].replaceAll("\\s", ""))] = Integer.parseInt(tokens[2].replaceAll("\\s", ""));				
+			}	
+			
+			//-------------- Display the adjacent matrix -----------------//
+			System.out.println("List nodes in Map: " + nodesMap);
+			
+			for (int i = 0; i < this.getNumNodes(); i++)
+				System.out.print("    " + listNodes.get(i).getState()+":"+listNodes.get(i).getId());
+			System.out.println();			
+			
+			System.out.print("     ");
+			for (int i = 0; i < this.getNumNodes(); i++)
+				System.out.format("%5s", listNodes.get(i).getState());
+			System.out.println();
+			for (int i = 0; i < this.getNumNodes(); i++){
+				System.out.format("%5s",listNodes.get(i).getState());
+				for (int k = 0; k < this.getNumNodes(); k++)
+					System.out.format("%5d", adjG[i][k]);
+				System.out.println();
+			}
+			
+			// ----------Sunday Traffic Lines------------
+//			numST = br.readLine();
+			if ((numST = br.readLine()) != null)
+				numST = numST.replaceAll("\\s", "");
+			if (numST != null && numST.matches("[0-9]+") && numST.length()>0)
+				numSundayTraffic = Integer.parseInt(numST);
+			
+//			System.out.println("Number Sunday Traffic Line: " + numSundayTraffic);
+			String sLine;
+			for (int i = 0; i < numSundayTraffic; i++) {
+				sLine = br.readLine();
+				tokens = sLine.split(" ");
+//				System.out.println(tokens[0] + " : " + tokens[1]);
+				for (int k = 0; k < listNodes.size(); k++)
+					if (listNodes.get(k).getState().equals(tokens[0].replaceAll("\\s", "")))
+						listNodes.get(k).setHCost(Integer.parseInt(tokens[1].replaceAll("\\s", "")));
+			}
+			for (int i = 0; i < numNodes; i++)
+				System.out.println("Nodes " + listNodes.get(i).getState() + " h = " + listNodes.get(i).getHCost());
+			
+	
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				if (br != null)
+					br.close();
+			} catch (IOException ex) {
+				ex.printStackTrace();
+			}
+		}
+	}
+
+	public ArrayList<Node> getListNodes() {
+		return listNodes;
+	}
+
+	public void setListNodes(ArrayList<Node> listNodes) {
+		this.listNodes = listNodes;
+	}
+
+	public String getAlgo() {
+		return Algo;
+	}
+
+	public void setAlgo(String algo) {
+		Algo = algo;
+	}
+
+	public int getNumNodes() {
+		return numNodes;
+	}
+
+	public void setNumNodes(int numNodes) {
+		this.numNodes = numNodes;
+	}
+
+	public int[][] getAdjG() {
+		return adjG;
+	}
+
+	public void setAdjG(int[][] adjG) {
+		this.adjG = adjG;
+	}
+
+	public Node getStartS() {
+		return startS;
+	}
+
+	public void setStartS(Node startS) {
+		this.startS = startS;
+	}
+
+	public Node getGoalS() {
+		return goalS;
+	}
+
+	public void setGoalS(Node goalS) {
+		this.goalS = goalS;
+	}
+}

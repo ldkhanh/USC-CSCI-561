@@ -1,0 +1,15 @@
+M10 Raid
+OO.......O....
+..OX..X....X..
+X..OOX...O.OO.
+.......OXOOOX.
+..O....O..O.O.
+.....X....O...
+X.X...X.....O.
+.O.O.X.....OO.
+.OO.O...XO...O
+X.......O.OOO.
+.....O..O...O.
+..XX..O.OXOO..
+.....OO..X....
+..O.X.OOOOO.O.

@@ -1,0 +1,27 @@
+DFS
+A
+H
+14
+A B 1
+B C 1
+B D 2
+D F 3
+C D 1
+A E 10
+E F 2
+F G 3
+G H 3
+A I 1
+I J 1
+J K 1
+K L 1
+L H 1
+
+
+Output: DFS:
+A 0
+B 1
+D 2
+F 3
+G 4
+H 5

@@ -1,0 +1,7 @@
+F3 Raid
+.O..OO
+O...OO
+..OO.O
+O.OO.O
+O.X...
+..O...

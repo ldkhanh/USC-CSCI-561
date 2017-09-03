@@ -1,0 +1,15 @@
+G5 Raid
+.XOOX.....O...
+.O..XX..O...OO
+OOX..OXX......
+OO.XO.O......O
+O..O..OOX.O..X
+..X.O.OO.O.XXO
+.....XO.....O.
+..XXXOOXXO...X
+OX..OOOOOX...O
+O...O..OX.O.X.
+...XXXO.OOO...
+O.O..OO.O...O.
+O.OO.O..OXO.OO
+OOX..O.OX.OXO.

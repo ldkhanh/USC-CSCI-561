@@ -1,0 +1,13 @@
+DFS
+A
+C
+5
+A B 2
+A C 4
+B D 1
+C D 2
+D C 5
+
+Output: DFS:
+A 0
+C 1
